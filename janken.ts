@@ -13,7 +13,7 @@ export function parseHand(n: number) {
   const isHand = Object.values(HANDS).find((hand) => hand === n);
 
   if (isHand === undefined) {
-    return undefined
+    return undefined;
   }
 
   return n as HandsType;
@@ -62,6 +62,6 @@ export function judgement(myHand: HandsType, otherHand: HandsType) {
         return JUDGE.LOSE;
       }
     default:
-      return undefined
+      return undefined;
   }
 }
